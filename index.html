@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Travaux 3D</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -22,17 +23,23 @@
             <h2>Mon Portfolio</h2>
             <div class="gallery">
                 <div class="work">
-                    <img src="ASSETS/IMAGES/paysage.png" alt="Travail 1">
+                    <a href="ASSETS/IMAGES/paysage.png" data-lightbox="gallery">
+                        <img src="ASSETS/IMAGES/paysage.png" alt="Travail 1">
+                    </a>
                     <h3>Travail 1</h3>
                     <p>Description du travail 1.</p>
                 </div>
                 <div class="work">
-                    <img src="ASSETS/IMAGES/rendu_final_so.png" alt="Travail 2">
+                    <a href="ASSETS/IMAGES/rendu_final_so.png" data-lightbox="gallery">
+                        <img src="ASSETS/IMAGES/rendu_final_so.png" alt="Travail 2">
+                    </a>
                     <h3>Travail 2</h3>
                     <p>Description du travail 2.</p>
                 </div>
                 <div class="work">
-                    <img src="ASSETS/IMAGES/saloon.png" alt="Travail 3">
+                    <a href="ASSETS/IMAGES/saloon.png" data-lightbox="gallery">
+                        <img src="ASSETS/IMAGES/saloon.png" alt="Travail 3">
+                    </a>
                     <h3>Travail 3</h3>
                     <p>Description du travail 3.</p>
                 </div>
@@ -60,5 +67,14 @@
     <footer>
         <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message ! Je vous répondrai bientôt.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
