@@ -6,6 +6,13 @@
     <title>Mes Travaux 3D</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <style>
+        video {
+            max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+            height: auto; /* Maintient les proportions de la vidéo */
+            margin: 20px 0; /* Ajoute un espacement autour de la vidéo */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,11 +20,9 @@
         <nav>
             <ul>
                 <li><a href="https://vimeo.com/manage/videos/150485082" target="_blank">Portfolio</a></li>
-                <li><a href="sylvain.metois11@gmail.com">Contact</a></li>
+                <li><a href="mailto:sylvain.metois11@gmail.com">Contact</a></li>
             </ul>
         </nav>
-        
-        
     </header>
 
     <main>
@@ -45,8 +50,14 @@
                     <h3>Travail 3</h3>
                     <p>Description du travail 3.</p>
                 </div>
-                <!-- Ajoutez d'autres travaux ici -->
+                <!-- Autres travaux -->
             </div>
+            
+            <h2>Ma Vidéo</h2>
+            <video controls>
+                <source src="ASSETS/VIMEO/mavideo.mp4" type="video/mp4">
+                Votre navigateur ne prend pas en charge la balise vidéo.
+            </video>
         </section>
 
         <section id="contact">

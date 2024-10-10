@@ -14,6 +14,17 @@ header {
     text-align: center;
 }
 
+
+video {
+    width: 60%; /* Définit la largeur à 60% du conteneur parent */
+    max-width: 800px; /* Limite la largeur maximale à 800 pixels */
+    height: auto; /* Maintient les proportions de la vidéo */
+    margin: 20px 0; /* Ajoute un espacement autour de la vidéo */
+    display: block; /* Assure que la vidéo est un bloc pour un meilleur alignement */
+    margin-left: auto; /* Centre la vidéo horizontalement */
+    margin-right: auto; /* Centre la vidéo horizontalement */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
